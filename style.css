@@ -1,0 +1,102 @@
+/* Estilo general */
+body {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+  color: #333;
+}
+
+/* Título */
+h1 {
+  font-size: 2.5rem;
+  color: #1d3557;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+
+}
+
+/* Formulario */
+form {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.2s ease;
+}
+
+form:hover {
+  transform: translateY(-3px);
+}
+
+/* Etiquetas */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #1d3557;
+}
+
+/* Campos */
+input,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #b0bec5;
+  background-color: #f8f9fa;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-size: 0.95rem;
+}
+
+input:focus,
+select:focus {
+  border-color: #457b9d;
+  box-shadow: 0 0 0 3px rgba(69, 123, 157, 0.2);
+  outline: none;
+}
+
+/* Botones */
+button {
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+/* Colores específicos */
+button[type="button"]:first-of-type {
+  background: #2a9d8f;
+  color: white;
+}
+
+button[type="reset"] {
+  background: #e63946;
+  color: white;
+}
+
+button[onclick="imprimirPagina()"] {
+  background: #457b9d;
+  color: white;
+}
+
+/* Pequeño detalle al hacer foco */
+button:focus {
+  outline: 2px solid #a8dadc;
+  outline-offset: 2px;
+}
